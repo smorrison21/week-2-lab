@@ -50,8 +50,14 @@ print(color)
 color = 'blue'
 color = 'My favorite color is %s, what is yours?' % color
 print(color)
+
 #7
 color = 'My favorite color is {}, what is yours?'.format(yellow)
+print(color)
+
+#7 fixed
+color = 'yellow'
+color = 'My favorite color is {}, what is yours?'.format(color)
 print(color)
 
 #8
