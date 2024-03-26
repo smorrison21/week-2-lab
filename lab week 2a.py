@@ -28,7 +28,7 @@ print(my_string.upper())
 
 #4
 z = ['a', 'b', 'c']
-z[3] = 'd'
+z.append('d')
 print(z)
 
 z = ['a', 'b', 'c']
@@ -37,10 +37,11 @@ print(z)
 #5 run all these lines at once. why does the x not display 10, 
 #followed by the 200?  Fix it so it does.
 x = 10
-x
+print(x)
 y = 20
 print(x * y)
 
+#It didn't print because we did not tell it to
 #6
 
 #color = 'My favorite color is {}, what is yours?' % blue
@@ -61,7 +62,7 @@ color = 'My favorite color is {}, what is yours?'.format(color)
 print(color)
 
 #8
-color = f'My favorite color is {red}, what is yours?'
+#color = f'My favorite color is {red}, what is yours?'
 print(color)
 
 #8 fixed
@@ -73,10 +74,16 @@ print(color)
 
 #9 make the entries in this list unique
 schools = ['harris', 'booth', 'crown', 'harris', 'harris']
-
+schools = set(schools)
+print(schools)
 #10 change the 'dog' entry to 'cat'
 animals = tuple(['bird', 'horse', 'dog', 'fish'])
+animals = ['bird', 'horse', 'dog', 'fish']
+animals[2] = 'cat'
+print(animals)
 
 #11 separate the words in this string into entries in a list, with only lower-case
 #letters, e.g. ['i', 'love', 'how', ...
 my_sent = 'All that snow we had this winter sure was fun!'
+my_sent = my_sent.lower().split()
+print(my_sent)
