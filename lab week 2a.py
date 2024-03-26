@@ -17,19 +17,23 @@ print(x+y)
 #2
 my_list = [40, 50, 60, 70, 80, 100, 200, 400]
 my_list_len = len(my_list)
-print(my_list[my_list_len])
+print(my_list[my_list_len-1])
 
 
 #2 fixed
 
 #3
 my_string = 'hello world'
-print(my_string.upper)
+print(my_string.upper())
 
 #4
 z = ['a', 'b', 'c']
 z[3] = 'd'
+print(z)
 
+z = ['a', 'b', 'c']
+z = 'd'
+print(z)
 #5 run all these lines at once. why does the x not display 10, 
 #followed by the 200?  Fix it so it does.
 x = 10
@@ -38,9 +42,14 @@ y = 20
 print(x * y)
 
 #6
+
 color = 'My favorite color is {}, what is yours?' % blue
 print(color)
 
+#6 fixed
+color = 'blue'
+color = 'My favorite color is %s, what is yours?' % color
+print(color)
 #7
 color = 'My favorite color is {}, what is yours?'.format(yellow)
 print(color)
