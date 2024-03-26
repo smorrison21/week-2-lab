@@ -43,8 +43,8 @@ print(x * y)
 
 #6
 
-color = 'My favorite color is {}, what is yours?' % blue
-print(color)
+#color = 'My favorite color is {}, what is yours?' % blue
+#print(color)
 
 #6 fixed
 color = 'blue'
@@ -52,7 +52,7 @@ color = 'My favorite color is %s, what is yours?' % color
 print(color)
 
 #7
-color = 'My favorite color is {}, what is yours?'.format(yellow)
+#color = 'My favorite color is {}, what is yours?'.format(yellow)
 print(color)
 
 #7 fixed
@@ -62,6 +62,11 @@ print(color)
 
 #8
 color = f'My favorite color is {red}, what is yours?'
+print(color)
+
+#8 fixed
+color = 'red'
+color = f'My favorite color is {color}, what is yours?'
 print(color)
 
 #### answer the following questions by adding lines, but without changing the code given
