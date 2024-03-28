@@ -35,7 +35,19 @@ start_list = [[2, 3, 4], [6, 8, 9]]
 #HINTS: There are three steps here: mapping, filtering, and flattening the nested lists
 #       Try doing this in a for-loop, then try doing it in a list comprehension
 #       You may need to check StackOverflow for how to flatten a nested list
-
+flat_list = sum(start_list,[])
+divisor = 2
+new_list = []
+for x in flat_list:
+    new_list.append(x//divisor)
+new_list = list(set(new_list))
+print(new_list)
+even_list = []
+for int in flat_list:
+    if int % 2 == 0:
+        even_list.append(int)
+other_list = [int / divisor for int in even_list]
+another_list = [round(x) for x in other_list]
 #4
 import datetime
 start_dict = {'noah': '2/23/1999',
