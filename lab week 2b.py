@@ -8,8 +8,11 @@ i = 0
 while i < 10:
     if i < 5:
         print('little')
-    elif i >= 5:
+    elif i > 5:
         print('big')
+    elif i == 5:
+        i += 1
+        continue
     else:
         print('what happened?')
     print('Finished!')
