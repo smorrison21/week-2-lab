@@ -48,6 +48,7 @@ for int in flat_list:
         even_list.append(int)
 other_list = [int / divisor for int in even_list]
 another_list = [round(x) for x in other_list]
+
 #4
 import datetime
 start_dict = {'noah': '2/23/1999',
@@ -58,3 +59,7 @@ start_dict = {'noah': '2/23/1999',
 #              'Zach': datetime.datetime(2005, 8, 8)}
 #HINTS: The datetime library has a function that turns strings of the right format into dates
 #       Again, start with a for-loop, but make a dictionary comprehension in the end
+from datetime import datetime
+
+new_dict = {name.capitalize(): datetime.strptime(date_str, "%m/%d/%Y") for name, date_str in start_dict.items()} 
+    
